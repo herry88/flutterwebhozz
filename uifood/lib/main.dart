@@ -256,73 +256,75 @@ class SelectTypeSection extends StatelessWidget {
     // final width = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          Container(
-            height: 92.0,
-            width: 120.0,
-            color: greenLight,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Icon(
-                  FontAwesomeIcons.starHalfAlt,
-                  color: green,
-                ),
-                SizedBox(
-                  height: 4.0,
-                ),
-                Text(
-                  'Special Menu',
-                  style: TextStyle(color: green, fontWeight: FontWeight.w500),
-                )
-              ],
+      child: SingleChildScrollView(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Container(
+              height: 92.0,
+              width: 120.0,
+              color: greenLight,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    FontAwesomeIcons.starHalfAlt,
+                    color: green,
+                  ),
+                  SizedBox(
+                    height: 4.0,
+                  ),
+                  Text(
+                    'Special Menu',
+                    style: TextStyle(color: green, fontWeight: FontWeight.w500),
+                  )
+                ],
+              ),
             ),
-          ),
-          Container(
-            height: 92.0,
-            width: 120.0,
-            color: redLight,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Icon(
-                  FontAwesomeIcons.solidClock,
-                  color: red,
-                ),
-                SizedBox(
-                  height: 4.0,
-                ),
-                Text(
-                  'Book a Table',
-                  style: TextStyle(color: red, fontWeight: FontWeight.w500),
-                )
-              ],
+            Container(
+              height: 92.0,
+              width: 120.0,
+              color: redLight,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    FontAwesomeIcons.solidClock,
+                    color: red,
+                  ),
+                  SizedBox(
+                    height: 4.0,
+                  ),
+                  Text(
+                    'Book a Table',
+                    style: TextStyle(color: red, fontWeight: FontWeight.w500),
+                  )
+                ],
+              ),
             ),
-          ),
-          Container(
-            height: 92.0,
-            width: 124.0,
-            color: blueLight,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Icon(
-                  FontAwesomeIcons.solidLaugh,
-                  color: blue,
-                ),
-                SizedBox(
-                  height: 4.0,
-                ),
-                Text(
-                  'Caterings',
-                  style: TextStyle(color: blue, fontWeight: FontWeight.w500),
-                )
-              ],
+            Container(
+              height: 92.0,
+              width: 124.0,
+              color: blueLight,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Icon(
+                    FontAwesomeIcons.solidLaugh,
+                    color: blue,
+                  ),
+                  SizedBox(
+                    height: 4.0,
+                  ),
+                  Text(
+                    'Caterings',
+                    style: TextStyle(color: blue, fontWeight: FontWeight.w500),
+                  )
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
